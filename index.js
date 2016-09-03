@@ -11,7 +11,7 @@ module.exports = function isExtglob(str) {
   }
 
   var m, matches = [];
-  while ((m = /(\\).|([@?!+*]\()/g.exec(str))) {
+  while ((m = /(\\).|([@?!+*]\(.*\))/g.exec(str))) {
     if (m[2]) matches.push(m[2]);
     str = str.slice(m.index + m[0].length);
   }

@@ -31,6 +31,12 @@ describe('isExtglob', function () {
   });
 
   it('should not match escaped extglobs', function () {
+    assert(!isExtglob('?(abc/xyz'));
+    assert(!isExtglob('@(abc'));
+    assert(!isExtglob('!(abc'));
+    assert(!isExtglob('*(abc'));
+    assert(!isExtglob('+(abc'));
+    assert(!isExtglob('(a|b'));
     assert(!isExtglob('\\?(abc)'));
     assert(!isExtglob('\\@(abc)'));
     assert(!isExtglob('\\!(abc)'));
