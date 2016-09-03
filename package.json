@@ -22,7 +22,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.10"
+    "gulp-format-md": "^0.1.10",
+    "mocha": "^3.0.2"
   },
   "keywords": [
     "bash",
