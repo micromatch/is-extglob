@@ -28,6 +28,16 @@ isExtglob('+(abc)');
 
 **False**
 
+Escaped extglobs:
+
+```js
+isExtglob('\\?(abc)');
+isExtglob('\\@(abc)');
+isExtglob('\\!(abc)');
+isExtglob('\\*(abc)');
+isExtglob('\\+(abc)');
+```
+
 Everything else...
 
 ```js
@@ -43,6 +53,12 @@ isExtglob('abc/?.js');
 isExtglob('abc.js');
 isExtglob('abc/def/ghi.js');
 ```
+
+## History
+
+**v2.0**
+
+Adds support for escaping. Escaped exglobs no longer return true.
 
 ## About
 
