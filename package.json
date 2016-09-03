@@ -3,17 +3,16 @@
   "description": "Returns true if a string has an extglob.",
   "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/is-extglob",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-extglob",
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-extglob/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "LICENSE",
+    "README.md"
   ],
   "main": "index.js",
   "engines": {
@@ -24,19 +23,19 @@
     "prepublish": "browserify -o browser.js -e index.js"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "gulp-format-md": "^0.1.10"
   },
   "keywords": [
     "bash",
     "braces",
     "check",
     "exec",
-    "extglob",
     "expression",
+    "extglob",
     "glob",
     "globbing",
     "globstar",
+    "is",
     "match",
     "matches",
     "pattern",
@@ -44,5 +43,29 @@
     "regular",
     "string",
     "test"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "is-glob",
+        "micromatch",
+        "has-glob"
+      ]
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
 }
