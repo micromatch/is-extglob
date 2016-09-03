@@ -19,8 +19,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha",
-    "prepublish": "browserify -o browser.js -e index.js"
+    "test": "mocha"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.10"
