@@ -1,7 +1,7 @@
 {
   "name": "is-extglob",
   "description": "Returns true if a string has an extglob.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "homepage": "https://github.com/jonschlinkert/is-extglob",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-extglob",
@@ -10,9 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "LICENSE",
-    "README.md"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -55,9 +53,9 @@
     ],
     "related": {
       "list": [
+        "has-glob",
         "is-glob",
-        "micromatch",
-        "has-glob"
+        "micromatch"
       ]
     },
     "reflinks": [
