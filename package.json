@@ -1,7 +1,7 @@
 {
   "name": "is-extglob",
   "description": "Returns true if a string has an extglob.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "homepage": "https://github.com/jonschlinkert/is-extglob",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-extglob",
