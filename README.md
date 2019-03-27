@@ -7,7 +7,7 @@
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save is-extglob
+$ npm install is-extglob
 ```
 
 ## Usage
