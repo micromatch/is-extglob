@@ -5,13 +5,14 @@
  * Licensed under the MIT License.
  */
 
+var regex = /(\\).|([@?!+*]\(.*\))/g;
 module.exports = function isExtglob(str) {
   if (typeof str !== 'string' || str === '') {
     return false;
   }
 
   var match;
-  while ((match = /(\\).|([@?!+*]\(.*\))/g.exec(str))) {
+  while ((match = regex.exec(str))) {
     if (match[2]) return true;
     str = str.slice(match.index + match[0].length);
   }
