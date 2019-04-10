@@ -5,7 +5,7 @@
  * Licensed under the MIT License.
  */
 
-var regex = /(\\).|([@?!+*]\(.*\))/g;
+var regex = /(\\).|([@?!+*]\(.*\))/;
 module.exports = function isExtglob(str) {
   if (typeof str !== 'string' || str === '') {
     return false;
